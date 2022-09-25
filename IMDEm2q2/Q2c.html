@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <h1>IMDEM2 Q2b</h1>
+  <p>CODE: <br>
+    function golf(par, strokes) {<br>
+        if (strokes == 1) {<br>
+          document.getElementById("case").innerHTML = "Hole-in-One!";<br>
+        } else if (strokes <= par - 2) {<br>
+          document.getElementById("case").innerHTML = "Eagle";<br>
+        } else if (strokes === par - 1) {<br>
+          document.getElementById("case").innerHTML = "Birdie";<br>
+        } else if (strokes === par) {<br>
+          document.getElementById("case").innerHTML = "Par";<br>
+        } else if (strokes === par + 1) {<br>
+          document.getElementById("case").innerHTML = "Bogey";<br>
+        } else if (strokes === par + 2) {<br>
+          document.getElementById("case").innerHTML = "Double Bogey";<br>
+        } else {<br>
+          document.getElementById("case").innerHTML = "Par";<br>
+        }<br>
+      }<br>
+      golf(5, 4);<br>
+      //Iteration to find factorial of a number a using for loop<br>
+      function Fact(a){<br>
+          let j = 1;<br>
+          for(let i = 0;i<=a;i++){<br>
+              j = j*i;<br>
+          }<br>
+          document.getElementById("fact").innerHTML = j;<br>
+        }<br>
+      Fact(5);<br>
+    Anyone who scored 4 strokes in a round with 5 par, gets a <span id="case"></span>. The factorial of 5 is <span id="fact"></span>.</p>
+<body>
+
+<script>
+    //Decision making statement to check the result of a golfer based on the number of strokes that he took and the par for that round. I used if - else- if chain
+    function golf(par, strokes) {
+      if (strokes == 1) {
+        document.getElementById("case").innerHTML = "Hole-in-One!";
+      } else if (strokes <= par - 2) {
+        document.getElementById("case").innerHTML = "Eagle";
+      } else if (strokes === par - 1) {
+        document.getElementById("case").innerHTML = "Birdie";
+      } else if (strokes === par) {
+        document.getElementById("case").innerHTML = "Par";
+      } else if (strokes === par + 1) {
+        document.getElementById("case").innerHTML = "Bogey";
+      } else if (strokes === par + 2) {
+        document.getElementById("case").innerHTML = "Double Bogey";
+      } else {
+        document.getElementById("case").innerHTML = "Par";
+      }
+    }
+    golf(5, 4);
+    //Iteration to find factorial of a number a using for loop
+    function Fact(a){
+        let j = 1;
+        for(let i = 1;i<=a;i++){
+            j = j*i;
+        }
+        document.getElementById("fact").innerHTML = j;
+      }
+    Fact(5);
+
+</script>
+
+</body>
+</html> 
